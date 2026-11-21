@@ -1,0 +1,29 @@
+MALA PRAXIS — kit de publicación gratuita
+
+ARCHIVOS
+index.html = revista pública
+site-data.json = artículos listos para publicar (inicialmente vacío)
+assets/ = imágenes del sitio
+editor_local.html = editor privado LOCAL, no subirlo a la web pública
+
+FLUJO
+1. Abre editor_local.html en el mismo navegador y computadora donde guardaste tus borradores anteriores.
+2. Si no aparecen, importa el respaldo JSON exportado por el editor anterior.
+3. Escribe o edita un artículo, marca «Listo para publicar» y pulsa Guardar.
+4. Pulsa «GENERAR PUBLICACIONES PARA LA WEB». Descargará site-data.json.
+5. Sustituye el site-data.json del sitio por el nuevo archivo y vuelve a desplegar o subir el cambio.
+6. Los visitantes verán los artículos listos. Los borradores nunca se incluyen en ese archivo.
+
+PUBLICACIÓN GRATUITA (GitHub Pages)
+1. Crea un repositorio público en GitHub.
+2. Sube index.html, site-data.json y la carpeta assets (NO editor_local.html).
+3. En Settings > Pages, elige Deploy from a branch, main, /(root).
+4. Espera a que aparezca el enlace de tu sitio.
+5. Para publicar nuevos artículos, reemplaza site-data.json en GitHub.
+
+NOTAS
+- El editor guarda borradores en localStorage del navegador, NO en la nube. Exporta respaldos.
+- La vista previa abriendo index.html como archivo puede no cargar site-data.json por restricciones del navegador; una vez alojado por HTTP(S), sí.
+- Los artículos de demostración preexistentes siguen visibles en la maqueta: retíralos antes del lanzamiento público.
+- Revisa rigor científico, referencias, derechos de imágenes, anonimización y consentimiento de casos antes de publicar.
+- La web es estática; no existe panel privado remoto ni publicación con un solo clic.
